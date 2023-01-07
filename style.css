@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+    /* ------ Primary ------ */
+    --red: hsl(0, 100%, 74%);
+    --green: hsl(154, 59%, 51%);
+    /* ------ Accent ------ */
+    --blue: hsl(248, 32%, 49%);
+    /* ------ Neutral ------ */
+    --darkblue: hsl(249, 10%, 26%);
+    --grayishblue: hsl(246, 25%, 77%);
+}
+
+body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    font-family: 'Poppins';
+    background-image: url(/images/bg-intro-desktop.png);
+    background-color: var(--red);
+}
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 70rem;
+}
+.leftside {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 30rem;
+    width: 33rem;
+}
+.leftside h1 {
+    font-size: 48px;
+    margin-bottom: 0;
+}
+.rightside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 35rem;
+    width: 35rem;
+}
+.rightside .bottom {
+    text-align: center;
+    box-shadow: 0 0.5rem 1px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 0.75rem;
+    height: 29.5rem;
+    width: 35rem;
+    padding: 2.5rem;
+}
+.bottom form {
+    height: 18rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+input {
+    font-weight: 700;
+    box-sizing: border-box;
+    padding: 1rem 2rem;
+    height: 3.5rem;
+    border-radius: 0.25rem;
+    border: 1px solid var(--grayishblue);
+}
+input::placeholder {
+    font-weight: 700;
+}
+label {
+    font-size: 12px;
+    text-align: end;
+    margin-right: 0.5rem;
+    color: var(--red);
+}
+.bottom button {
+    margin-top: 1.25rem;
+    font-weight: 700;
+    padding: 1rem 2rem;
+    height: 3.5rem;
+    width: 100%;
+    border-radius: 0.25rem;
+    border: none;
+    font-size: 15px;
+    color: white;
+    background-color: var(--green);
+    border: none;
+    box-shadow: inset 0px -4px 2px rgba(0, 0, 0, 0.2);
+}
+.bottom p {
+    color: var(--grayishblue);
+    font-size: 11px;
+}
+.bottom p span {
+    font-weight: 600;
+    color: var(--red);
+}
+.rightside .top {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0.5rem 1px rgba(0, 0, 0, 0.2);
+    background-color: var(--blue);
+    border-radius: 0.75rem;
+    height: 4rem;
+    width: 35rem;
+}
+.rightside .top p span {
+    font-weight: 700;
+}
