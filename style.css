@@ -20,11 +20,10 @@ body {
     background-color: var(--red);
 }
 main {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
     width: 70rem;
+}
+.mainbody {
+    display: flex;
 }
 .leftside {
     color: white;
@@ -115,11 +114,14 @@ label {
     font-weight: 700;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1100px) {
     main {
         flex-direction: column;
         width: fit-content;
         text-align: center;
+    }
+    .mainbody {
+        display: block;
     }
     .leftside {
         height: fit-content;
