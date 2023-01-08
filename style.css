@@ -114,3 +114,14 @@ label {
 .rightside .top p span {
     font-weight: 700;
 }
+
+@media screen and (max-width: 800px) {
+    main {
+        flex-direction: column;
+        width: fit-content;
+        text-align: center;
+    }
+    .leftside {
+        height: fit-content;
+    }
+}
